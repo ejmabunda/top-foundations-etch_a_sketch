@@ -12,6 +12,12 @@ function createGrid(container, width, height) {
             // Create square and add to row
             let square = document.createElement('div');
             square.classList.add('square');
+
+            // Draw on hover
+            square.addEventListener('mouseover', (event) => {
+                event.target.style.backgroundColor = 'black';
+            });
+
             row.appendChild(square);
         }
         container.appendChild(row);

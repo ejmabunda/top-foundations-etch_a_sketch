@@ -8,7 +8,8 @@
 #container {
     display: flex;
     flex-direction: column;
-
+    width: 1000px;
+    height: 1000px;
 }
 .row {
     display: flex;
