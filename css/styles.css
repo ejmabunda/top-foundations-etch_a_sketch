@@ -5,17 +5,27 @@
     margin: 0;
 }
 
+:root {
+    --padding: 2rem;
+}
+
+body {
+    padding: var(--padding);
+}
+
 #container {
     display: flex;
     flex-direction: column;
-    width: 1000px;
-    height: 1000px;
+    width: calc(100vh - 2 * var(--padding));
+    height: calc(100vh - 2 * var(--padding));
+    margin: auto;
+    border: 1px solid black;
 }
 .row {
     display: flex;
+    flex: 1;
 }
 .square {
     background-color: #f7f7f7;
     flex: 1;
-    height: calc(100vh / 16);
 }
